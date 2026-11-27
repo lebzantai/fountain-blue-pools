@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fountain Blue Pools | Professional Pool Maintenance & Repairs</title>
+<style>
+  :root {
+    --primary: #0a4d8c;
+    --accent: #00b4d8;
+    --light: #f8fbff;
+    --dark: #0d1b2a;
+    --text: #1e293b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); line-height: 1.6; background: var(--light); }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+  header { background: white; box-shadow: 0 2px 20px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
+  .logo { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.4rem; color: var(--primary); }
+  nav ul { display: flex; list-style: none; gap: 28px; }
+  nav a { text-decoration: none; color: var(--text); font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: var(--accent); }
+  .btn { display: inline-block; background: var(--accent); color: white; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+  .btn:hover { background: #0096c7; transform: translateY(-2px); }
+  .btn-outline { background: transparent; border: 2px solid white; color: white; }
+  .hero { background: linear-gradient(rgba(10,77,140,0.55), rgba(10,77,140,0.7)), url('https://images.trvl-media.com/lodging/89000000/88650000/88646300/88646240/0c45301d.jpg?impolicy=resizecrop&rw=1200&rh=600&ra=fill') center/cover no-repeat; color: white; padding: 140px 0 100px; text-align: center; }
+  .hero h1 { font-size: 3.4rem; margin-bottom: 16px; font-weight: 700; }
+  .hero p { font-size: 1.3rem; max-width: 700px; margin: 0 auto 32px; opacity: 0.95; }
+  section { padding: 80px 0; }
+  h2 { font-size: 2.5rem; text-align: center; margin-bottom: 16px; color: var(--primary); }
+  .subtitle { text-align: center; max-width: 600px; margin: 0 auto 50px; color: #475569; font-size: 1.1rem; }
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+  .service-card { background: white; padding: 32px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); text-align: center; transition: transform 0.3s; }
+  .service-card:hover { transform: translateY(-8px); }
+  .service-card h3 { color: var(--primary); margin: 16px 0 12px; }
+  .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .plan { background: white; border-radius: 20px; padding: 36px 28px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); position: relative; text-align: center; }
+  .plan.featured { border: 3px solid var(--accent); transform: scale(1.03); }
+  .plan h3 { font-size: 1.5rem; color: var(--primary); margin-bottom: 8px; }
+  .price { font-size: 2.8rem; font-weight: 700; color: var(--accent); margin: 16px 0; }
+  .price span { font-size: 1rem; color: #64748b; font-weight: 400; }
+  .plan ul { list-style: none; margin: 24px 0; text-align: left; }
+  .plan li { padding: 8px 0; border-bottom: 1px solid #e2e8f0; }
+  .plan li:before { content: "\2713 "; color: var(--accent); font-weight: bold; }
+  .booking { background: linear-gradient(135deg, var(--primary), #023e8a); color: white; border-radius: 24px; padding: 50px; }
+  .booking form { display: grid; gap: 16px; max-width: 500px; margin: 0 auto; }
+  .booking input, .booking select, .booking textarea { padding: 14px 18px; border: none; border-radius: 10px; font-size: 1rem; }
+  .booking button { background: var(--accent); color: white; border: none; padding: 16px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; cursor: pointer; }
+  .contact { background: white; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+  .phone { font-size: 2rem; color: var(--primary); font-weight: 700; }
+  footer { background: var(--dark); color: white; padding: 40px 0 20px; text-align: center; }
+  .sample-note { background: #fff3cd; color: #856404; padding: 12px; text-align: center; font-size: 0.9rem; border-bottom: 1px solid #ffeeba; }
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 2.4rem; }
+    nav ul { display: none; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .hero { padding: 100px 0 70px; }
+  }
+</style>
+</head>
+<body>
+<div class="sample-note">Sample website created by Symmetra Systems – No cost, no obligation. Your feedback is welcome!</div>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Fountain Blue Pools</div>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#plans">Maintenance Plans</a></li>
+        <li><a href="#repairs">Repairs</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <h1>Crystal Clear Pools.<br>Expert Care You Can Trust.</h1>
+    <p>Professional pool maintenance, repairs and water care across South Africa. Keep your pool sparkling all year round.</p>
+    <a href="#booking" class="btn">Book a Service</a>
+    <a href="#plans" class="btn btn-outline" style="margin-left:12px;">View Plans</a>
+  </div>
+</section>
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p class="subtitle">Everything your pool needs – from regular care to emergency repairs.</p>
+    <div class="services">
+      <div class="service-card">
+        <img src="https://papcomshared.blob.core.windows.net/app/service/Pool-Maintenance.jpg" alt="Water testing" style="width:100%; border-radius:12px; margin-bottom:16px; height:180px; object-fit:cover;">
+        <h3>Water Care & Balancing</h3>
+        <p>Precise chemical testing and balancing to keep your water safe, clear and comfortable.</p>
+      </div>
+      <div class="service-card">
+        <h3>Weekly & Fortnightly Cleaning</h3>
+        <p>Brushing, vacuuming, skimming and equipment checks so you never have to worry.</p>
+      </div>
+      <div class="service-card">
+        <h3>Equipment Repairs</h3>
+        <p>Pumps, filters, heaters, lights and plumbing – we diagnose and fix it fast.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="plans" style="background:#f0f7ff;">
+  <div class="container">
+    <h2>Maintenance Plans</h2>
+    <p class="subtitle">Flexible plans designed to keep your pool in perfect condition.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Monthly</h3>
+        <div class="price">R450<span>/visit</span></div>
+        <ul>
+          <li>Full clean & vacuum</li>
+          <li>Water testing & chemicals</li>
+          <li>Equipment inspection</li>
+          <li>Skim & brush</li>
+        </ul>
+        <a href="#booking" class="btn">Choose Plan</a>
+      </div>
+      <div class="plan featured">
+        <h3>Fortnightly</h3>
+        <div class="price">R650<span>/visit</span></div>
+        <ul>
+          <li>Everything in Monthly</li>
+          <li>Priority scheduling</li>
+          <li>Filter cleaning</li>
+          <li>Algae prevention</li>
+          <li>Free minor adjustments</li>
+        </ul>
+        <a href="#booking" class="btn">Most Popular</a>
+      </div>
+      <div class="plan">
+        <h3>Weekly</h3>
+        <div class="price">R950<span>/visit</span></div>
+        <ul>
+          <li>Everything in Fortnightly</li>
+          <li>Dedicated technician</li>
+          <li>Chemical top-ups included</li>
+          <li>Same-day emergency call-out</li>
+        </ul>
+        <a href="#booking" class="btn">Choose Plan</a>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:24px; color:#64748b;">Prices are sample estimates. Final pricing confirmed on site.</p>
+  </div>
+</section>
+<section id="repairs">
+  <div class="container">
+    <h2>Repair Services</h2>
+    <p class="subtitle">Fast, reliable repairs for all pool equipment and structures.</p>
+    <div class="services">
+      <div class="service-card">
+        <h3>Pump & Motor Repairs</h3>
+        <p>Noisy pumps, leaks or complete failures – we get it running again quickly.</p>
+      </div>
+      <div class="service-card">
+        <h3>Filter & Valve Issues</h3>
+        <p>Sand, cartridge or DE filters. We service, repair or replace as needed.</p>
+      </div>
+      <div class="service-card">
+        <h3>Leaks & Resurfacing</h3>
+        <p>Detect and repair leaks. Marbelite, fibreglass and tile work available.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="booking" style="background:#f0f7ff;">
+  <div class="container">
+    <div class="booking">
+      <h2 style="color:white; margin-bottom:12px;">Quick Booking Form</h2>
+      <p style="text-align:center; margin-bottom:28px; opacity:0.9;">Tell us what you need and we’ll get back to you within a few hours.</p>
+      <form onsubmit="alert('Thank you! This is a sample form. In the live site this would send your request directly to the team.'); return false;">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <select required>
+          <option value="">Select Service</option>
+          <option>Maintenance Plan</option>
+          <option>One-off Clean</option>
+          <option>Repair</option>
+          <option>Quote for New Work</option>
+        </select>
+        <textarea placeholder="Tell us about your pool or the issue..." rows="4"></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <div class="contact-grid">
+      <div>
+        <p style="font-size:1.2rem; margin-bottom:16px;">Ready for a sparkling pool? Call or WhatsApp us today.</p>
+        <div class="phone">+27 84 530 2651</div>
+        <p style="margin:16px 0;">Fountain Blue Pools (Pty) Ltd</p>
+        <a href="https://wa.me/27845302651" class="btn" target="_blank">WhatsApp Us</a>
+      </div>
+      <div>
+        <img src="https://images.trvl-media.com/lodging/89000000/88650000/88646300/88646240/0c45301d.jpg?impolicy=resizecrop&rw=800&rh=500&ra=fill" alt="Beautiful pool" style="width:100%; border-radius:16px;">
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p><strong>Fountain Blue Pools (Pty) Ltd</strong></p>
+    <p style="margin:8px 0;">Professional Pool Maintenance & Repairs</p>
+    <p style="opacity:0.7; margin-top:20px;">Sample website designed by Symmetra Systems • No cost, no obligation</p>
+  </div>
+</footer>
+</body>
+</html>
